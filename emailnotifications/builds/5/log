@@ -1,0 +1,27 @@
+Started by GitHub push by Swapnaputluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/emailnotifications
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/emailnotifications/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Swapnaputluru/email # timeout=10
+Fetching upstream changes from https://github.com/Swapnaputluru/email
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/Swapnaputluru/email +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 837c405b2b2b43a8923af187a9bf5dd1938110cc (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 837c405b2b2b43a8923af187a9bf5dd1938110cc # timeout=10
+Commit message: "Update file1"
+ > git rev-list --no-walk 366d0f39a67eeafa1668f8c3bb23f356d64f0181 # timeout=10
+No emails were triggered.
+[emailnotifications] $ /bin/sh -xe /tmp/jenkins6948574314866157792.sh
++ echo hii
+hii
+Email was triggered for: Always
+Sending email for trigger: Always
+Not sending mail to unregistered user (id: noreply, email: noreply@github.com) because your SCM claimed this was associated with a user ID ‘[8mha:////4Okpo3DAWsIx3n5hVVbAeRrLEBkG4WPwnw4+olwPrq6wAAAAjh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2Hg1S8tTi3Sz8svSi3IqQQAmoRtrZIAAAA=[0mnoreply' which your security realm does not recognize; you may need changes in your SCM plugin
+An attempt to send an e-mail to empty list of recipients, ignored.
+Finished: SUCCESS

@@ -1,0 +1,46 @@
+commit 6a51e4a217c4bf9001d69a184ae3563564a8e671
+tree 290f394c82c13f79c9e4d779140f3763e856af5f
+parent e1c69d0dc970d71bc9bd50dabb0c9661644e913f
+author Swapnaputluru <96280032+Swapnaputluru@users.noreply.github.com> 2023-12-12 12:18:27 +0530
+committer GitHub <noreply@github.com> 2023-12-12 12:18:27 +0530
+
+    Update Jenkinsfile
+
+:100644 100644 7bf1f42a9a4e20ae2f09ba7d74e5bf62a3e5ed63 3ee59e416510b3e6eef81d346b78e6a8789004cf M	Jenkinsfile
+commit e1c69d0dc970d71bc9bd50dabb0c9661644e913f
+tree cfffbb215200d480969eb7b9652d95a7773bed03
+parent 8b3987296cfffd53db0033c037d036349e45d3da
+author Swapnaputluru <96280032+Swapnaputluru@users.noreply.github.com> 2023-12-12 12:14:58 +0530
+committer GitHub <noreply@github.com> 2023-12-12 12:14:58 +0530
+
+    Update Jenkinsfile
+
+:100644 100644 cba55443e230b54f40c53bdc96c57c47d36ab761 7bf1f42a9a4e20ae2f09ba7d74e5bf62a3e5ed63 M	Jenkinsfile
+commit 8b3987296cfffd53db0033c037d036349e45d3da
+tree 785579982687a1c75002e6b0783d52afb3d96c24
+parent f08a4fa837b510753bfa4341d79731d48bceabb0
+author Swapnaputluru <96280032+Swapnaputluru@users.noreply.github.com> 2023-12-12 12:12:09 +0530
+committer GitHub <noreply@github.com> 2023-12-12 12:12:09 +0530
+
+    Update Jenkinsfile
+
+:100644 100644 45dbd5a0d7804be3043fa2e5b047c28c103795f1 cba55443e230b54f40c53bdc96c57c47d36ab761 M	Jenkinsfile
+commit f08a4fa837b510753bfa4341d79731d48bceabb0
+tree 329b1afe9c6226ed4a6217440e3f4801a0872edb
+parent d89f68fbb4a669224a5bdfda418dbb59658068ad
+author Swapnaputluru <96280032+Swapnaputluru@users.noreply.github.com> 2023-12-12 12:07:29 +0530
+committer GitHub <noreply@github.com> 2023-12-12 12:07:29 +0530
+
+    Create Jenkinsfile
+
+:000000 100644 0000000000000000000000000000000000000000 45dbd5a0d7804be3043fa2e5b047c28c103795f1 A	Jenkinsfile
+commit d89f68fbb4a669224a5bdfda418dbb59658068ad
+tree ad24149d789e59d4b5f9ce41cda90110ca0f98b7
+parent 
+author root <root@ip-172-31-34-185.us-east-2.compute.internal> 2023-12-11 07:25:47 +0000
+committer root <root@ip-172-31-34-185.us-east-2.compute.internal> 2023-12-11 07:25:47 +0000
+
+    first commit
+
+
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	file1

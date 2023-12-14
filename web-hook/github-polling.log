@@ -1,0 +1,14 @@
+Started on Dec 13, 2023, 9:31:05 AM
+Started by event from 140.82.115.253 ⇒ http://18.217.188.109:8080//github-webhook/ on Wed Dec 13 09:31:05 UTC 2023
+Using strategy: Default
+[poll] Last Built Revision: Revision fc54e9e15eba7712e9ac9cb5a88fd348697040a4 (refs/remotes/origin/master)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git ls-remote -h -- https://github.com/Swapnaputluru/Python-jenkins # timeout=10
+Found 2 remote heads on https://github.com/Swapnaputluru/Python-jenkins
+[poll] Latest remote head revision on refs/heads/master is: c9a12a1c76ab1aba9235aba824aefddc3f682fc5
+Done. Took 0.22 sec
+Changes found

@@ -1,0 +1,22 @@
+Started by GitHub push by Swapnaputluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/emailnotifications
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/emailnotifications/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Swapnaputluru/email # timeout=10
+Fetching upstream changes from https://github.com/Swapnaputluru/email
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/Swapnaputluru/email +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 366d0f39a67eeafa1668f8c3bb23f356d64f0181 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 366d0f39a67eeafa1668f8c3bb23f356d64f0181 # timeout=10
+Commit message: "Update file1"
+ > git rev-list --no-walk c5934e4fe6f057245b0d99ee8300992349c06396 # timeout=10
+[emailnotifications] $ /bin/sh -xe /tmp/jenkins9891966524930087753.sh
++ echo hii
+hii
+Finished: SUCCESS

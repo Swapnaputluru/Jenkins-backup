@@ -1,0 +1,7 @@
+Started by user [8mha:////4KB6Y3DZeh7jHy7qFSRwym+gXRew4lXj+cgDb0zC7d6CAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9jCIjS3MAyrDmRMAAAAA=[0mSwapna Putluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/demo-parameter
+[demo-parameter] $ /bin/sh -xe /tmp/jenkins15955895823942941032.sh
++ echo Sunny
+Sunny
+Finished: SUCCESS

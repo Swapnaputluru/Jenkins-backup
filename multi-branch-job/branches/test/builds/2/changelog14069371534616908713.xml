@@ -1,0 +1,38 @@
+commit 9f15b25bba235d1b27a7915931d21be69b603dde
+tree 81e2dc2121f8931134d401c4500e84c0192de93a
+parent 6a79e51dc7bda42ae97b08232c20b97433ad07e7
+author Swapnaputluru <96280032+Swapnaputluru@users.noreply.github.com> 2023-12-11 17:48:46 +0530
+committer GitHub <noreply@github.com> 2023-12-11 17:48:46 +0530
+
+    Rename Jenkinsfile.groovy to Jenkinsfile
+
+:100644 100644 e74935ef7e7cc65bccf4b6ead893f25300575d7e e74935ef7e7cc65bccf4b6ead893f25300575d7e R100	Jenkinsfile.groovy	Jenkinsfile
+commit 6a79e51dc7bda42ae97b08232c20b97433ad07e7
+tree 44e501049b0a503a02bc188f3df1db42cc7d1c75
+parent 9d81faac570dd1ec9009e9fd322991363980cfc6
+author Swapnaputluru <96280032+Swapnaputluru@users.noreply.github.com> 2023-12-11 17:45:58 +0530
+committer GitHub <noreply@github.com> 2023-12-11 17:45:58 +0530
+
+    Update Jenkinsfile.groovy
+
+:100644 100644 32f6b2c363c2c1f1a3dd22add379e58efd02d590 e74935ef7e7cc65bccf4b6ead893f25300575d7e M	Jenkinsfile.groovy
+commit 9d81faac570dd1ec9009e9fd322991363980cfc6
+tree 4e9f71f2d8ad2daa6d24400e3bafc061c01365c5
+parent d89f68fbb4a669224a5bdfda418dbb59658068ad
+author root <root@ip-172-31-34-185.us-east-2.compute.internal> 2023-12-11 12:10:40 +0000
+committer root <root@ip-172-31-34-185.us-east-2.compute.internal> 2023-12-11 12:10:40 +0000
+
+    jenkins file
+
+
+:000000 100644 0000000000000000000000000000000000000000 32f6b2c363c2c1f1a3dd22add379e58efd02d590 A	Jenkinsfile.groovy
+commit d89f68fbb4a669224a5bdfda418dbb59658068ad
+tree ad24149d789e59d4b5f9ce41cda90110ca0f98b7
+parent 
+author root <root@ip-172-31-34-185.us-east-2.compute.internal> 2023-12-11 07:25:47 +0000
+committer root <root@ip-172-31-34-185.us-east-2.compute.internal> 2023-12-11 07:25:47 +0000
+
+    first commit
+
+
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	file1

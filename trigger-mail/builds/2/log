@@ -1,0 +1,9 @@
+[PollMailboxTrigger] Job was triggered by email sent from swapnareddy.putluru@gmail.com ([8mha:////4MrKHYpRJ7QnOuZCfRcT36ghvK8xja/IveVoP2s2YvSzAAAAkR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgBpoB1JeenlrknFhanOqYXJKZnwcA6A2a3ZcAAAA=[0mlog)
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/trigger-mail
+[trigger-mail] $ /bin/sh -xe /tmp/jenkins2337109587797493200.sh
++ echo Trigger from mail
+Trigger from mail
++ echo Swapna
+Swapna
+Finished: SUCCESS

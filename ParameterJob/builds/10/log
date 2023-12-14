@@ -1,0 +1,45 @@
+Started by user [8mha:////4KB6Y3DZeh7jHy7qFSRwym+gXRew4lXj+cgDb0zC7d6CAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9jCIjS3MAyrDmRMAAAAA=[0mSwapna Putluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/ParameterJob
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/ParameterJob/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Swapnaputluru/docker.git # timeout=10
+Fetching upstream changes from https://github.com/Swapnaputluru/docker.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/Swapnaputluru/docker.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/sony^{commit} # timeout=10
+Checking out Revision 67b4704f068f416179c2efa7714e2eb033d63c4a (refs/remotes/origin/sony)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67b4704f068f416179c2efa7714e2eb033d63c4a # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk f0d54a166c25c332b207959a1c85948cb715c3e1 # timeout=10
+[ParameterJob] $ /bin/sh -xe /tmp/jenkins415296639969050180.sh
++ echo pipeline {
+		agent any 
+  		stages {
+    		stage(Demo){
+      			steps {
+        			git branch: 'main', url: 'https://github.com/Swapnaputluru/docker.git'
+        			sh ls
+        			sh cat Dockerfile
+     			 }
+   			 }
+ 		 }
+	}
+pipeline {
+		agent any 
+  		stages {
+    		stage(Demo){
+      			steps {
+        			git branch: 'main', url: 'https://github.com/Swapnaputluru/docker.git'
+        			sh ls
+        			sh cat Dockerfile
+     			 }
+   			 }
+ 		 }
+	}
+Finished: SUCCESS

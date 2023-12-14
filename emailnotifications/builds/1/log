@@ -1,0 +1,25 @@
+Started by user [8mha:////4KB6Y3DZeh7jHy7qFSRwym+gXRew4lXj+cgDb0zC7d6CAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9jCIjS3MAyrDmRMAAAAA=[0mSwapna Putluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/emailnotifications
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Swapnaputluru/email
+ > git init /var/lib/jenkins/workspace/emailnotifications # timeout=10
+Fetching upstream changes from https://github.com/Swapnaputluru/email
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/Swapnaputluru/email +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Swapnaputluru/email # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 00b0e7454a9efb0870b4ad25d77987c6d579f324 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 00b0e7454a9efb0870b4ad25d77987c6d579f324 # timeout=10
+Commit message: "Create file1"
+First time build. Skipping changelog.
+[emailnotifications] $ /bin/sh -xe /tmp/jenkins13936985736071034673.sh
++ echo hii
+hii
+Finished: SUCCESS

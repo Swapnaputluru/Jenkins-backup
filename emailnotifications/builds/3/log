@@ -1,0 +1,24 @@
+Started by GitHub push by Swapnaputluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/emailnotifications
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/emailnotifications/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Swapnaputluru/email # timeout=10
+Fetching upstream changes from https://github.com/Swapnaputluru/email
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/Swapnaputluru/email +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c5934e4fe6f057245b0d99ee8300992349c06396 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c5934e4fe6f057245b0d99ee8300992349c06396 # timeout=10
+Commit message: "Update file1"
+ > git rev-list --no-walk 00b0e7454a9efb0870b4ad25d77987c6d579f324 # timeout=10
+[emailnotifications] $ /bin/sh -xe /tmp/jenkins1783496302448548905.sh
++ echo hii
+hii
+Not sending mail to unregistered user noreply@github.com
+Sending e-mails to: swapnareddy.putluru@gmail.com
+Finished: SUCCESS

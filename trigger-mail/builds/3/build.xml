@@ -1,0 +1,189 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <org.jenkinsci.lib.xtrigger.XTriggerCauseAction plugin="poll-mailbox-trigger-plugin@1.026">
+      <build class="build" reference="../../.."/>
+    </org.jenkinsci.lib.xtrigger.XTriggerCauseAction>
+    <org.jenkinsci.plugins.pollmailboxtrigger.environment.SetEnvironmentVariablesAction plugin="poll-mailbox-trigger-plugin@1.026">
+      <parameters>
+        <entry>
+          <string>pmt_mail.imaps.host</string>
+          <string>imap.gmail.com</string>
+        </entry>
+        <entry>
+          <string>pmt_attachments</string>
+          <string>IGNORE</string>
+        </entry>
+        <entry>
+          <string>pmt_mail.debug.auth</string>
+          <string>false</string>
+        </entry>
+        <entry>
+          <string>pmt_retryEmailLink</string>
+          <string>&lt;a href=&quot;mailto:swapnareddy.putluru@gmail.com?subject=trigger from mail&amp;body=%0D%0A&lt;div dir=&amp;quot;ltr&amp;quot;&gt;name=swapna&lt;/div&gt;%0D%0A%0D%0Aname=swapna%0D%0A&quot;&gt;Click to Retry Job&lt;/a&gt;</string>
+        </entry>
+        <entry>
+          <string>pmt_receivedXMinutesAgo</string>
+          <string>1440</string>
+        </entry>
+        <entry>
+          <string>pmt_mail.debug</string>
+          <string>false</string>
+        </entry>
+        <entry>
+          <string>pmt_storeName</string>
+          <string>imaps</string>
+        </entry>
+        <entry>
+          <string>pmt_subject</string>
+          <string>trigger from mail</string>
+        </entry>
+        <entry>
+          <string>pmt_folder</string>
+          <string>INBOX</string>
+        </entry>
+        <entry>
+          <string>pmt_content</string>
+          <string>
+&lt;div dir=&quot;ltr&quot;&gt;name=swapna&lt;/div&gt;&#xd;
+
+name=swapna&#xd;
+</string>
+        </entry>
+        <entry>
+          <string>pmt_contentType</string>
+          <string>multipart/ALTERNATIVE; boundary=000000000000251897060c63f376</string>
+        </entry>
+        <entry>
+          <string>pmt_flags</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>pmt_username</string>
+          <string>swapnareddy.putluru@gmail.com</string>
+        </entry>
+        <entry>
+          <string>pmt_subjectContains</string>
+          <string>Trigger from mail</string>
+        </entry>
+        <entry>
+          <string>pmt_messageNumber</string>
+          <string>79</string>
+        </entry>
+        <entry>
+          <string>pmt_headers</string>
+          <string>Delivered-To=swapnareddy.putluru@gmail.com, Received=by 2002:a05:7023:a8e:b0:71:9ae9:612b with SMTP id qc14csp2067047dlb;&#xd;
+ Wed, 13 Dec 2023 05:14:42 -0800 (PST), X-Received=by 2002:ac2:4add:0:b0:50b:fcdb:8de8 with SMTP id&#xd;
+ m29-20020ac24add000000b0050bfcdb8de8mr3410564lfp.59.1702473281759; Wed, 13&#xd;
+ Dec 2023 05:14:41 -0800 (PST), ARC-Seal=i=1; a=rsa-sha256; t=1702473281; cv=none; d=google.com;&#xd;
+ s=arc-20160816;&#xd;
+ b=DtTngTQ1zPBG3wn5xL/0lldgdXhCxmOemcM9O7P04j72+tujfT9TYyB7W08P9crfgJ&#xd;
+ 5f9FQVFVE6XatRI4RMG/7rVamAXx800NT2vBhuJGNi5Md2hlfGajuHgPVcDqRrUiUoL/&#xd;
+ J5MCCrQmNLLvp+oumoZerdC2TYNhyDvj1CFRIoIjNIFES45UqDilv49Sw/GXGPaK+I3R&#xd;
+ YVfVpky8ayuWERQni4Iz94kMbdwZ6mHRtEEls2xmPe6rtYCD0XL1QG3iIaDeHZa8Qhpg&#xd;
+ O/d1+QypH1OqjqxGME6Ho6IOhBJ3uWcrdhBbztpmCgq1QXSL1LxgUzuwXRHbMbmAO7eG t+QQ==, ARC-Message-Signature=i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;&#xd;
+ s=arc-20160816;&#xd;
+ h=to:subject:message-id:date:from:mime-version:dkim-signature;&#xd;
+ bh=fzPBmN31BnQzvq/dTY7Ho3QhahG84nzp+FOjN9tcgno=;&#xd;
+ fh=4Gyo+W7TrJoyisqziElnBP1m07CTXvKgDbvsDqB74wY=;&#xd;
+ b=Is12ejQhhIFeBrw73ZC200YwYBCwJo4DKxUGGRs/w/A7j3o00H4XbC+XYw9tpkXydE&#xd;
+ maHWrw4khhjEgkB0gAtvB36ugLsDTlThYdXSRPBFRQbmnLuxJtIfThbHx3fE4qkPopJn&#xd;
+ JsYRTeEHNSWoyFapAOW+8ENwP33aLY6rZgfYMptxfAQsR+kIhz9qVabaQUFQInUy5Rag&#xd;
+ 00EzYlSvVmcxDjSSi+ozSa/8Ewe78JtOMMyH8YDAtH76xRZTO70YY3Mm9K0loiU8b1jw&#xd;
+ HkXqnLMPyGjWLF8oYovoZ9RS9DzxTPMibT+Vvzd0EkXvrDHSILtWpJtUc8d2qwepKJ6Q YEtA==, ARC-Authentication-Results=i=1; mx.google.com; dkim=pass header.i=@gmail.com&#xd;
+ header.s=20230601 header.b=HxAkXnP1; spf=pass (google.com: domain of&#xd;
+ divija231@gmail.com designates 209.85.220.41 as permitted sender)&#xd;
+ smtp.mailfrom=divija231@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE)&#xd;
+ header.from=gmail.com, Return-Path=&lt;divija231@gmail.com&gt;, Received=from mail-sor-f41.google.com (mail-sor-f41.google.com.&#xd;
+ [209.85.220.41]) by mx.google.com with SMTPS id&#xd;
+ n11-20020a0565120acb00b0050e0d70e6b7sor558303lfu.29.2023.12.13.05.14.41 for&#xd;
+ &lt;swapnareddy.putluru@gmail.com&gt; (Google Transport Security); Wed, 13 Dec 2023&#xd;
+ 05:14:41 -0800 (PST), Received-SPF=pass (google.com: domain of divija231@gmail.com designates&#xd;
+ 209.85.220.41 as permitted sender) client-ip=209.85.220.41;, Authentication-Results=mx.google.com; dkim=pass header.i=@gmail.com&#xd;
+ header.s=20230601 header.b=HxAkXnP1; spf=pass (google.com: domain of&#xd;
+ divija231@gmail.com designates 209.85.220.41 as permitted sender)&#xd;
+ smtp.mailfrom=divija231@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE)&#xd;
+ header.from=gmail.com, DKIM-Signature=v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20230601;&#xd;
+ t=1702473281; x=1703078081; dara=google.com;&#xd;
+ h=to:subject:message-id:date:from:mime-version:from:to:cc:subject&#xd;
+ :date:message-id:reply-to; bh=fzPBmN31BnQzvq/dTY7Ho3QhahG84nzp+FOjN9tcgno=;&#xd;
+ b=HxAkXnP1bR0mvWScEBTO8UrcFQ0Gu1V2bccjT+s66ZV+gRxy50P1bjmUGTMKnB7Ix4&#xd;
+ toXvkXIQb9Phegk7YtZb7rxpLzugwTUGAJK5mUpuaN4QLS9A3fQZNJrFm/dbNpeVGB/l&#xd;
+ 7imqOK88sFQhQBqh6ZUr4QLyMGBWijDRmoj/3/eoydMOqYrAOzfx7ep2yKyrZrwTBYj2&#xd;
+ XgM50L6D4EJc7LjIu2HkLMzwxzh38eGob7vxgsivItDE5YUVr/+1BLLKmj8cFzHJp8ip&#xd;
+ EW23E7Fg2IRbCGwVQKWB9t85PwLu1ToBpHL18wA3Vxz9imP6SMbWJeSkwmLdRZKDGIHI 1aTQ==, X-Google-DKIM-Signature=v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net;&#xd;
+ s=20230601; t=1702473281; x=1703078081;&#xd;
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state&#xd;
+ :from:to:cc:subject:date:message-id:reply-to;&#xd;
+ bh=fzPBmN31BnQzvq/dTY7Ho3QhahG84nzp+FOjN9tcgno=;&#xd;
+ b=Z7X9n9PN/6rAMU6UyH1pFkmxwEbgmlTYdLK3gHbFEbzlYaksPBDk71aS7Cwuk+u+Sp&#xd;
+ yBFM73pR362J3xmxOjTy3dm+euIaMHYFYi6FVXCqYcgsXWV795xTguwbqZSyTihW/XCO&#xd;
+ Y93gl02GAmYesxYXoJlwgGgctycFuSBO7KdhaGXHvm/RPptNYbJ1rP5wOWMqKV6cp+bg&#xd;
+ 9RVMsGYFeLDqbB2QipiRt2asyXDoyqbvwrPj/dA3RxE8BBX7nN0+hC8MRbf65iTuLj5e&#xd;
+ E4dhqGHHeHxA1sJ8O9iOo9p+xZq74TWEfLmBZ+VB+juwmVtiUVtOFC4LHnf0bR55f3lZ AI0w==, X-Gm-Message-State=AOJu0YxY8u4GCu3BFvOQgyKA17cr5VNdIKnGeTHpGIwZialhSlaZYTlY&#xd;
+ lx6TyjDCPYBU5RMAmRPg8dmklVroYlGY1VRUlg/ntxC7mOeH/A==, X-Google-Smtp-Source=AGHT+IFdJqo4CFoLlfIFIbGV3rbQaLSRRW4qsQ5c36fnm4124GD5lIkvcbktDKYpAuNEJ73j7t5RLVUEhXsD5AxE73c=, X-Received=by 2002:a05:6512:e94:b0:50b:f9b5:b4de with SMTP id&#xd;
+ bi20-20020a0565120e9400b0050bf9b5b4demr4738438lfb.40.1702473280852; Wed, 13&#xd;
+ Dec 2023 05:14:40 -0800 (PST), MIME-Version=1.0, From=Chelluboina Divija &lt;divija231@gmail.com&gt;, Date=Wed, 13 Dec 2023 18:43:17 +0530, Message-ID=&lt;CAEqoZgvia29hE7n7vqBeUhVwtvQmgR1P-xnswqFnZ1P862x0Hw@mail.gmail.com&gt;, Subject=trigger from mail, To=&quot;swapnareddy.putluru@gmail.com&quot; &lt;swapnareddy.putluru@gmail.com&gt;, Content-Type=multipart/alternative; boundary=&quot;000000000000251897060c63f376&quot;</string>
+        </entry>
+        <entry>
+          <string>pmt_from</string>
+          <string>divija231@gmail.com</string>
+        </entry>
+        <entry>
+          <string>pmt_sentDate</string>
+          <string>2023-12-13T13:13Z</string>
+        </entry>
+        <entry>
+          <string>name</string>
+          <string>swapna</string>
+        </entry>
+        <entry>
+          <string>pmt_host</string>
+          <string>imap.gmail.com</string>
+        </entry>
+        <entry>
+          <string>pmt_receivedDate</string>
+          <string>2023-12-13T13:14Z</string>
+        </entry>
+        <entry>
+          <string>pmt_mail.imaps.port</string>
+          <string>993</string>
+        </entry>
+        <entry>
+          <string>pmt_recipients</string>
+          <string>swapnareddy.putluru@gmail.com</string>
+        </entry>
+        <entry>
+          <string>pmt_replyTo</string>
+          <string>divija231@gmail.com</string>
+        </entry>
+      </parameters>
+    </org.jenkinsci.plugins.pollmailboxtrigger.environment.SetEnvironmentVariablesAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <org.jenkinsci.plugins.pollmailboxtrigger.PollMailboxTrigger_-NewEmailCause plugin="poll-mailbox-trigger-plugin@1.026">
+            <triggerName>PollMailboxTrigger</triggerName>
+            <causeFrom>Job was triggered by email sent from divija231@gmail.com</causeFrom>
+            <logEnabled>true</logEnabled>
+          </org.jenkinsci.plugins.pollmailboxtrigger.PollMailboxTrigger_-NewEmailCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>49</queueId>
+  <timestamp>1702473307824</timestamp>
+  <startTime>1702473308336</startTime>
+  <result>SUCCESS</result>
+  <duration>843</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/trigger-mail</workspace>
+  <hudsonVersion>2.426.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

@@ -1,0 +1,29 @@
+Started by user [8mha:////4KB6Y3DZeh7jHy7qFSRwym+gXRew4lXj+cgDb0zC7d6CAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9jCIjS3MAyrDmRMAAAAA=[0mSwapna Putluru
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/emailnotifications
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/emailnotifications/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Swapnaputluru/email # timeout=10
+Fetching upstream changes from https://github.com/Swapnaputluru/email
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/Swapnaputluru/email +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 837c405b2b2b43a8923af187a9bf5dd1938110cc (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 837c405b2b2b43a8923af187a9bf5dd1938110cc # timeout=10
+Commit message: "Update file1"
+ > git rev-list --no-walk 837c405b2b2b43a8923af187a9bf5dd1938110cc # timeout=10
+No emails were triggered.
+[emailnotifications] $ /bin/sh -xe /tmp/jenkins13977867363795421927.sh
++ echo hii
+hii
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: swapnareddy.putluru@gmail.com
+Connection error sending email, retrying once more in 10 seconds...
+Connection error sending email, retrying once more in 10 seconds...
+Failed after second try sending email
+Finished: SUCCESS

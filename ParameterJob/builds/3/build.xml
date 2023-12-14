@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterValue plugin="git-parameter@0.9.19">
+          <name>Branch</name>
+          <value>origin/test</value>
+        </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Branch</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hr297</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>3</queueId>
+  <timestamp>1702382102645</timestamp>
+  <startTime>1702382102650</startTime>
+  <result>FAILURE</result>
+  <duration>218</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/ParameterJob</workspace>
+  <hudsonVersion>2.426.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>
